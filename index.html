@@ -139,6 +139,14 @@
     display:flex; gap:8px; overflow-x:auto; padding:26px 20px 24px; justify-content:center;
     -ms-overflow-style:none; scrollbar-width:none;
   }
+  
+  /* Em telas pequenas, evita categorias cortadas no início da lista */
+@media (max-width: 600px){
+  .filters{
+    justify-content:flex-start;
+  }
+}
+  
   .filters::-webkit-scrollbar{display:none;}
   .tab{
     flex:0 0 auto; font-family:'Nunito',sans-serif; font-size:0.8rem; font-weight:700;
